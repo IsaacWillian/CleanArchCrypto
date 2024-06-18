@@ -19,9 +19,9 @@ class CoinRepositoryImpl @Inject constructor(
             val coins = api.getCoins().map { it.toCoin() }
             return Resource.Success(coins)
         } catch(e: retrofit2.HttpException){
-            return Resource.Error(e.localizedMessage ?: "An unexpected error occured")
-        } catch (e: IOException){
-            return Resource.Error("Couldn't reach server, Check your intenet connection")
+            return Resource.Error(e.localizedMessage ?: "An unexpected error occurred")
+        } catch (e: IOException) {
+            return Resource.Error("Couldn't reach server, Check your internet connection")
         }
     }
 
@@ -30,9 +30,9 @@ class CoinRepositoryImpl @Inject constructor(
             val coin = api.getCoinDetail(coinId).toCoinDetail()
             return Resource.Success(coin)
         } catch(e: retrofit2.HttpException){
-            return Resource.Error(e.localizedMessage ?: "An unexpected error occured")
+            return Resource.Error(e.localizedMessage ?: "An unexpected error occurred")
         } catch (e: IOException){
-            return Resource.Error("Couldn't reach server, Check your intenet connection")
+            return Resource.Error("Couldn't reach server, Check your internet connection")
         }
     }
 }

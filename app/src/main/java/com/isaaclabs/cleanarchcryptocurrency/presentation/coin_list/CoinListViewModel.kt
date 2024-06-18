@@ -8,6 +8,7 @@ import androidx.lifecycle.viewModelScope
 import com.isaaclabs.cleanarchcryptocurrency.common.Resource
 import com.isaaclabs.cleanarchcryptocurrency.domain.use_case.get_coins.GetCoinsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch

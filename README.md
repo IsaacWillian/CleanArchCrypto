@@ -14,6 +14,8 @@ Para esse projeto foi utilizado a Clean Architecture, e abaixo temos um rascunho
 - Temas e estilos no Jetpack compose
 - Clean Architecture e a responsabilidade da camada de Domain
 - Hilt para injeção de dependências
+- Escrita de teste unitário para a camada de dados
+- Setup do Jacoco para analisa de cobertura de código
 
 ## Bibliotecas utilizadas
 - Jetpack Compose (Jetpack Components)
@@ -22,4 +24,6 @@ Para esse projeto foi utilizado a Clean Architecture, e abaixo temos um rascunho
 - Material Compose
 - Kotlin Coroutines
 - Kotlin Flows
-- Retrofit 
+- Retrofit
+- JUnit
+- Jacoco
